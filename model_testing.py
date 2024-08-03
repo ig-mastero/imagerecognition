@@ -28,7 +28,7 @@ testing_labels = testing_labels[:4000]
 
 model = models.load_model('image_classifier.model')
 
-img = cv.imread('pookie.jpg') # Change this with the name of the image
+img = cv.imread('image.jpg') # Change this with the name of the image. (Upload it in the root folder/ Same folder as the program)
 img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
 
 img = cv.resize(img, (32, 32))
